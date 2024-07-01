@@ -83,6 +83,8 @@ body {
 .custom-card-style-1 {
 	border: 2px solid transparent;
 	transition: ease border 300ms;
+	margin-top: 8px !important;
+	height: 500px !important;
 	.custom-card-style-1-image-wrapper {
 		img {
 			transform: translate3d(5px, -5px, 0);

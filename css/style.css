@@ -70,6 +70,10 @@
   margin-right: 50px;
   text-align: center;
 }
+
+.video2 p {
+    text-align: left;
+}
 strong {
   text-align: left;
 }

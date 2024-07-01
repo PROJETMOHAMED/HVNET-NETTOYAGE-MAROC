@@ -101,6 +101,8 @@ strong {
     font-size: 0.7rem;
   }
 
+  
+
   .icon-animated {
     display: none;
   }
@@ -302,4 +304,17 @@ strong {
   footer h4 {
     padding: 0;
 }
+}
+
+#headingsection {
+  background-size: cover;
+  height: 50px;
+  margin-top: -50px;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 767px) { /* Adjust 767px to your desired breakpoint */
+  #headingsection {
+    height: 80px;
+  }
 }

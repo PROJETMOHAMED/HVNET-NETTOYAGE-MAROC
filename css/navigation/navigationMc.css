@@ -1,0 +1,68 @@
+@media screen and (min-width: 493px) {
+  #mobileNavCon {
+    width: 293px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  #topTinyBarContainer {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1134px) {
+  #navigation {
+    width: calc(100% - 20px);
+  }
+  #navigation #mobile-showMenuBtnCon {
+    display: none;
+  }
+  #navigation #logoAndSearchInputCon {
+    width: 297px;
+  }
+  #navigation #default-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navigation #nav-searchBtnCon {
+    display: none;
+  }
+}
+
+/*New modififaction*/
+
+#marg1{
+    margin-left:10px;
+}
+
+#font_color_marg{
+    margin-left:10px;
+    font-size: 18px;font-weight: bold; color:#ffffff; margin-left:200px;
+}
+
+#text_derco{
+    text-decoration:none;
+}
+
+#marg2{
+    margin-right:20px;
+}
+
+#point{
+    cursor:pointer;
+}
+
+#point1{
+    position:inherit;
+}
+
+#backgrou{
+    background-color:#9BBE3D;padding: 2px 19px;color:white
+}
+
+
+/*# sourceMappingURL=navigationMc.css.map */

@@ -1,0 +1,45 @@
+@media screen and (min-width: 768px) and (max-width: 1180px),
+  screen and(min-width:667px) and (max-width: 1024px) and (orientation: landscape) {
+  #corp,
+  .video {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  .video1,
+  .video2 {
+    margin: auto !important;
+  }
+  #corp {
+    height: auto !important;
+    flex-direction: column;
+    background-color: #eaf3f6;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .video {
+    height: auto;
+    flex-direction: column !important;
+    justify-content: space-around;
+  }
+  .video1 {
+    width: 650px !important;
+    height: 150px;
+  }
+  .video1 iframe {
+    width: 650px !important;
+    height: 365px !important;
+    object-fit: cover;
+    box-sizing: border-box;
+  }
+  .video2 {
+    width: 80% !important;
+    height: auto;
+    text-align: center;
+  }
+
+
+
+  /* Modification */
+
+}

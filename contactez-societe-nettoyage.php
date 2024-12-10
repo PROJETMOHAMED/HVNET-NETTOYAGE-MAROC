@@ -377,9 +377,9 @@
   <form method="POST">
 		   <?php
 		   $servername = 'localhost';
-		   $username = 'nettoyagecasabla_hvnet_climatisation';
-		   $password = 'azerty@123';
-		   $dbname = 'nettoyagecasabla_hvnet_climatisation';
+		   $username = 'root';
+		   $password = '1234';
+		   $dbname = 'nettoyagecasabla_nss_nettoyage';
    $conn = mysqli_connect($servername, $username, $password, $dbname);
    if (!$conn) {
 	   die('Connection failed: ' . mysqli_connect_error());

@@ -65,7 +65,11 @@
 
 
 </head>
-
+<style>
+	        .error {
+            color: red;
+        }
+</style>
 <body>
 
 	<div class="body">
@@ -305,12 +309,12 @@
 
 <!-- doit etre dans le header -->
 
-  <form method="POST">
+  <form id="myForm" method="POST">
 		   <?php
 		   $servername = 'localhost';
-		   $username = 'nettoyagecasabla_hvnet_climatisation';
-		   $password = 'azerty@123';
-		   $dbname = 'nettoyagecasabla_hvnet_climatisation';
+		   $username = 'root';
+		   $password = '1234';
+		   $dbname = 'nettoyagecasabla_nss_nettoyage';
    $conn = mysqli_connect($servername, $username, $password, $dbname);
    if (!$conn) {
 	   die('Connection failed: ' . mysqli_connect_error());
@@ -421,6 +425,20 @@
    color: #6c757d;  width: 100%;
    height: 40px; " type="text" name="senderEmail" placeholder="Email" required="">
 			   </div>
+			   <div class="inputAndLabelCon">
+                <label id="captchaQuestion"></label>
+                <input style=" border: 1px solid rgb(10, 10, 10) !important;
+					font-family: arial;
+					font-Weight: bold;
+					font-size: 18px;
+					color: #6c757d;  width: 100%;
+					height: 40px; " 
+   					 type="number" id="captchaAnswer" required>
+                <span id="errorMessage" class="error"></span>
+            </div>
+
+
+
 
 			   <div class="inputAndLabelCon" id="rt">
 				   <label>Type de local<span class="necessary">*</span></label><br>
@@ -560,7 +578,7 @@ $(document).ready(function(){ $("#Part").hide();$("#Prof").hide();$("#atre").hid
 
 
 
-<button id="sendMessageBtn" style="color:#fff; width: 100% ; background-color:#0072bd; font-weight:bold" name="sendEmailSubBtn">ENVOYER</button>
+<button id="sendMessageBtn" type="submit" style="color:#fff; width: 100% ; background-color:#0072bd; font-weight:bold" name="sendEmailSubBtn">ENVOYER</button>
 
 <?php
 if (isset($_POST['sendEmailSubBtn'])) {
@@ -794,6 +812,41 @@ function test_input($data)
 	<script src="js/theme.init.js"></script>
 
 
+	<script>
+        // Fonction pour générer un CAPTCHA
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10);
+            const num2 = Math.floor(Math.random() * 10);
+            return { question: `Quel est la somme de ${num1} + ${num2} ?`, answer: num1 + num2 };
+        }
+
+        // Génération initiale du CAPTCHA
+        let captcha = generateCaptcha();
+        document.getElementById('captchaQuestion').innerText = captcha.question;
+
+        // Gestion de l'événement de soumission
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            const userAnswer = parseInt(document.getElementById('captchaAnswer').value);
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (userAnswer === captcha.answer) {
+                // Si la réponse est correcte, laisser le formulaire s'envoyer
+                errorMessage.innerText = ''; // Supprime le message d'erreur
+            } else {
+                // Si la réponse est incorrecte, empêcher l'envoi et afficher un message
+                event.preventDefault(); // Bloque l'envoi du formulaire
+                errorMessage.innerText = 'Le nombre est incorrect. Veuillez réessayer.';
+                // Générer un nouveau CAPTCHA
+                captcha = generateCaptcha();
+                document.getElementById('captchaQuestion').innerText = captcha.question;
+                document.getElementById('captchaAnswer').value = ''; // Réinitialiser le champ de réponse
+            }
+        });
+    </script>
+
+    <!-- Lien vers Bootstrap JS et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
 </body>
 

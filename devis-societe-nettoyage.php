@@ -812,7 +812,7 @@ function test_input($data)
 	<script src="js/theme.init.js"></script>
 
 
-	<script>
+<script>
         // Fonction pour générer un CAPTCHA
         function generateCaptcha() {
             const num1 = Math.floor(Math.random() * 10);

@@ -1,0 +1,21 @@
+[11-Sep-2024 22:31:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/newsletter-subscribe.php on line 34
+[11-Sep-2024 22:31:41 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/newsletter-subscribe.php on line 37
+[11-Sep-2024 22:34:54 UTC] PHP Warning:  Undefined array key "twitter_screen_name" in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/twitter-feed.php on line 19
+[11-Sep-2024 22:34:54 UTC] PHP Warning:  Undefined array key "icon_color" in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/twitter-feed.php on line 21
+[11-Sep-2024 22:34:54 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$buffer is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 26
+[11-Sep-2024 22:34:54 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$config is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 34
+[11-Sep-2024 22:34:54 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$request_settings is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 93
+[17-Sep-2024 11:21:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/newsletter-subscribe.php on line 34
+[17-Sep-2024 11:21:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/newsletter-subscribe.php on line 37
+[17-Sep-2024 11:23:10 UTC] PHP Warning:  Undefined array key "twitter_screen_name" in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/twitter-feed.php on line 19
+[17-Sep-2024 11:23:10 UTC] PHP Warning:  Undefined array key "icon_color" in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/twitter-feed.php on line 21
+[17-Sep-2024 11:23:10 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$buffer is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 26
+[17-Sep-2024 11:23:10 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$config is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 34
+[17-Sep-2024 11:23:10 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$request_settings is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 93
+[27-Nov-2024 04:30:47 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/newsletter-subscribe.php on line 34
+[27-Nov-2024 04:30:47 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/newsletter-subscribe.php on line 37
+[27-Nov-2024 04:37:42 UTC] PHP Warning:  Undefined array key "twitter_screen_name" in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/twitter-feed.php on line 19
+[27-Nov-2024 04:37:42 UTC] PHP Warning:  Undefined array key "icon_color" in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/twitter-feed.php on line 21
+[27-Nov-2024 04:37:42 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$buffer is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 26
+[27-Nov-2024 04:37:42 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$config is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 34
+[27-Nov-2024 04:37:42 UTC] PHP Deprecated:  Creation of dynamic property tmhOAuth::$request_settings is deprecated in /home/nettoyagecasabla/nettoyage-casablanca-maroc.net/php/tweet-php/lib/tmhOAuth/tmhOAuth.php on line 93

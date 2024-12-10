@@ -60,7 +60,11 @@
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
-
+	<style>
+	        .error {
+            color: red;
+        }
+</style>
 
 
 </head>
@@ -374,7 +378,7 @@
 
 <!-- doit etre dans le header -->
 
-  <form method="POST">
+  <form id="myForm"  method="POST">
 		   <?php
 		   $servername = 'localhost';
 		   $username = 'root';
@@ -627,9 +631,18 @@ $(document).ready(function(){ $("#Part").hide();$("#Prof").hide();$("#atre").hid
 
 </div>
 
+<label id="captchaQuestion"></label>
+                <input style=" border: 1px solid rgb(10, 10, 10) !important;
+					font-family: arial;
+					font-Weight: bold;
+					font-size: 18px;
+					color: #6c757d;  width: 100%;
+					height: 40px; " 
+   					 type="number" id="captchaAnswer" required>
+                <span id="errorMessage" class="error"></span>
+            </div><br>
 
-
-<button id="sendMessageBtn" style="color:#fff; width: 100% ; background-color:#0072bd; font-weight:bold" name="sendEmailSubBtn">ENVOYER</button>
+<button id="sendMessageBtn"  style="color:#fff; width: 100% ; background-color:#0072bd; font-weight:bold" name="sendEmailSubBtn">ENVOYER</button>
 
 <?php
 if (isset($_POST['sendEmailSubBtn'])) {
@@ -816,6 +829,37 @@ function test_input($data)
 	</div>
 
 	<!-- Vendor -->
+	<script>
+        // Fonction pour générer un CAPTCHA
+        function generateCaptcha() {
+            const num1 = Math.floor(Math.random() * 10);
+            const num2 = Math.floor(Math.random() * 10);
+            return { question: `Quel est la somme de ${num1} + ${num2} ?`, answer: num1 + num2 };
+        }
+
+        // Génération initiale du CAPTCHA
+        let captcha = generateCaptcha();
+        document.getElementById('captchaQuestion').innerText = captcha.question;
+
+        // Gestion de l'événement de soumission
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            const userAnswer = parseInt(document.getElementById('captchaAnswer').value);
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (userAnswer === captcha.answer) {
+                // Si la réponse est correcte, laisser le formulaire s'envoyer
+                errorMessage.innerText = ''; // Supprime le message d'erreur
+            } else {
+                // Si la réponse est incorrecte, empêcher l'envoi et afficher un message
+                event.preventDefault(); // Bloque l'envoi du formulaire
+                errorMessage.innerText = 'Le nombre est incorrect. Veuillez réessayer.';
+                // Générer un nouveau CAPTCHA
+                captcha = generateCaptcha();
+                document.getElementById('captchaQuestion').innerText = captcha.question;
+                document.getElementById('captchaAnswer').value = ''; // Réinitialiser le champ de réponse
+            }
+        });
+    </script>
 	<script src="vendor/jquery/jquery.min.js"></script>
 	<script src="vendor/jquery.appear/jquery.appear.min.js"></script>
 	<script src="vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -846,7 +890,9 @@ function test_input($data)
 
 	<!-- Theme Initialization Files -->
 	<script src="js/theme.init.js"></script>
-
+    <!-- Lien vers Bootstrap JS et jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
 </body>
 

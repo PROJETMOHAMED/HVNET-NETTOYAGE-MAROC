@@ -425,21 +425,7 @@
    color: #6c757d;  width: 100%;
    height: 40px; " type="text" name="senderEmail" placeholder="Email" required="">
 			   </div>
-			   <div class="inputAndLabelCon">
-                <label id="captchaQuestion"></label>
-                <input style=" border: 1px solid rgb(10, 10, 10) !important;
-					font-family: arial;
-					font-Weight: bold;
-					font-size: 18px;
-					color: #6c757d;  width: 100%;
-					height: 40px; " 
-   					 type="number" id="captchaAnswer" required>
-                <span id="errorMessage" class="error"></span>
-            </div>
-
-
-
-
+			 
 			   <div class="inputAndLabelCon" id="rt">
 				   <label>Type de local<span class="necessary">*</span></label><br>
 				   <select name="ProOrPar" id="TypeLocal" style=" border: 1px solid rgb(10, 10, 10) !important;
@@ -575,7 +561,17 @@ $(document).ready(function(){ $("#Part").hide();$("#Prof").hide();$("#atre").hid
    height: 100px; " type="text" name="senderMessage" placeholder="Message" required=""></textarea><br><br>
 
 </div>
-
+<div class="inputAndLabelCon">
+                <label id="captchaQuestion"></label>
+                <input style=" border: 1px solid rgb(10, 10, 10) !important;
+					font-family: arial;
+					font-Weight: bold;
+					font-size: 18px;
+					color: #6c757d;  width: 100%;
+					height: 40px; " 
+   					 type="number" id="captchaAnswer" required>
+                <span id="errorMessage" class="error"></span>
+            </div><br>
 
 
 <button id="sendMessageBtn" type="submit" style="color:#fff; width: 100% ; background-color:#0072bd; font-weight:bold" name="sendEmailSubBtn">ENVOYER</button>

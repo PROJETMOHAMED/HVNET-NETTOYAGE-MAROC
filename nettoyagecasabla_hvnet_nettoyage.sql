@@ -129,7 +129,7 @@ CREATE TABLE `devis` (
 INSERT INTO `devis` (`id`, `nomprenom`, `ville`, `tel`, `email`, `ProOrPar`, `sujet`, `messag`) VALUES
 (44, 'Karim', '3', '0589221462', 'tes@gmail.com', '1', 'Maison', 'NETTOYAGE BUREAUX'),
 (45, 'WINBEST  Nettoyage', '1', '0788270861', 'winbest.nettoyage.group@gmail.com', '2', 'usine', 'devis2222222222222'),
-(46, 'sana', '8', '0587952144', 'test@gmail.com', '2', 'Magasin', 'Nettoyage Magasin');
+(46, 'sana', '8', '0587952144', 'test@gmail.com','2', 'Magasin', 'Nettoyage Magasin');
 
 -- --------------------------------------------------------
 
